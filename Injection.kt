@@ -29,7 +29,7 @@ object Injection {
     
     fun provideApiService(): ApiService = provideRetrofit().create(ApiService::class.java)
     
-    interface BelanjaApi {
+    interface ApiService {
 
     @FormUrlEncoded
     @POST("example.php")
